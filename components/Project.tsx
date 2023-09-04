@@ -24,11 +24,11 @@ const Project = (props: IProjectProps) => {
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}
-            className="flex flex-wrap lg:flex-nowrap items-start mb-32 p-8 lg:p-0"
+            className="flex flex-wrap lg:flex-nowrap items-start mb-32 p-8 lg:p-0 group"
         >
             <div className="z-20 w-full lg:w-1/3 text-center lg:text-right">
                 {/* Project Title */}
-                <div className="text-4xl font-semibold uppercase">{props.title}</div>
+                <div className="text-3xl font-bold uppercase">{props.title}</div>
 
                 {/* Project Description */}
                 <div className="p-4 my-4 bg-gray-50 rounded bg-opacity-90 w-full lg:w-[130%] text-medina-red font-semibold text-lg leading-6 text-center lg:text-left">
@@ -51,7 +51,7 @@ const Project = (props: IProjectProps) => {
             </div>
             <div className='z-10 w-full lg:w-2/3 lg:ml-8 pt-4 lg:pt-0'>
                 {/* Project Image */}
-                <Image layout={"responsive"} src={props.image} width={1420} height={458} alt={`Project ${props.title}`} />
+                <Image src={props.image} width={1420} height={458} alt={`Project ${props.title}`} className='group-hover:translate-x-10 transition duration-1000 group-hover:scale-105' />
             </div>
         </div>
     );
