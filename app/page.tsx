@@ -19,6 +19,7 @@ import { AnimationControls, motion, TargetAndTransition, Transition, useInView, 
 import { useState } from 'react'
 import Head from 'next/head'
 import MyInfo from '@/components/MyInfo';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   const scrollToTarget = (target: string, offset: number = 0) => {
@@ -251,11 +252,19 @@ const Home: NextPage = () => {
           <div>
             <Title title='contact' />
             <div className='flex items-center justify-around max-w-[300px] mx-auto pt-14 pb-8'>
-              <Image src={SocialGithub} width={43.65} height={43} alt="Github" />
-              <Image src={SocialLinkedIn} width={43.22} height={43.22} alt="LinkedIn" />
-              <Image src={SocialTwitter} width={52.82} height={42.91} alt="Twitter" />
+              <Link href="https://www.github.com/omedinapr" target="_blank" className='hover:-translate-y-2 transition'>
+                <Image src={SocialGithub} width={43.65} height={43} alt="Github" />
+              </Link>
+              <Link href="https://www.linkedin.com/in/omedinapr/" target="_blank" className='hover:-translate-y-2 transition'>
+                <Image src={SocialLinkedIn} width={43.22} height={43.22} alt="LinkedIn" />
+              </Link>
+              <Link href="https://www.twitter.com/omedinapr" target="_blank" className='hover:-translate-y-2 transition'>
+                <Image src={SocialTwitter} width={52.82} height={42.91} alt="Twitter" />
+              </Link>
             </div>
-            <p className='text-[8vw] sm:text-[5vw] md:text-[4vw] lg:text-[2.5vw] font-bold text-medina-red text-center'>hello@omedina.me</p>
+            <Link href="mailto:hello@omedina.me">
+              <p className='text-[8vw] sm:text-[5vw] md:text-[4vw] lg:text-[2.5vw] font-bold text-medina-red text-center hover:translate-y-4 transition duration-1000'>hello@omedina.me</p>
+            </Link>
           </div>
         </div>
       </section>
