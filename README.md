@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm Oscar Medina</h1>
-<h3 align="center">developer by 🌞 and developer by🌙, based out of New Jersey. In addition to creating automated solutions through code, I also enjoy live streaming and going out to restaurants.</h3>
+<h1 align="left">Hi 👋, I'm Oscar Medina</h1>
+<h3 align="left">developer by 🌞 and developer by🌙, based out of New Jersey. In addition to creating automated solutions through code, I also enjoy live streaming and going out to restaurants.</h3>
 
 <h2>👨‍💼 I’m currently working on</h2>
 <ul>
