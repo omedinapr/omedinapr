@@ -1,7 +1,8 @@
 <h1 align="center">Hi 👋, I'm Oscar Medina</h1>
 <h3 align="center">developer by 🌞 and developer by🌙</h3>
 
-- 🔭 I’m currently working on **ShipLeap**
+<h2>🔭 I’m currently working on</h2>
+- <a href="https://www.shipleap.com">ShipLeap</a> - A complete, easy-to-use shipping solution that you and your customers will love
 
 - 👨‍💻 All of my projects are available at [https://www.oscarmedina.me](https://www.oscarmedina.me)
 
