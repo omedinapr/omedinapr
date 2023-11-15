@@ -1,16 +1,14 @@
 <h1 align="center">Hi 👋, I'm Oscar Medina</h1>
 <h3 align="center">developer by 🌞 and developer by🌙</h3>
 
-<h2>🔭 I’m currently working on</h2>
-- <a href="https://www.shipleap.com">ShipLeap</a> - A complete, easy-to-use shipping solution that you and your customers will love
+<h2>👨‍💼 I’m currently working on</h2>
+- <a href="https://www.shipleap.com">ShipLeap</a> - A complete, easy-to-use shipping solution that you and your customers will love.
+- <a href="https://www.paragonw2p.com">ParagonW2P</a> - Your easy-to-use, dependable web-to-print solution.
+- <a href="https://www.evocart.co">EvoCart</a> - *SOON* Paragon's W2P evolution!
 
-- 👨‍💻 All of my projects are available at [https://www.oscarmedina.me](https://www.oscarmedina.me)
-
-- 💬 Ask me about **NextJS, NestJS, AWS and Typescript**
-
-- 📫 How to reach me **hello@oscarmedina.me**
-
-- ⚡ Fun fact **In addition to creating automated solutions through code, I also enjoy live streaming and going out to restaurants.**
+<h2>📨 How to reach me</h2>
+- **Email:** <a href="mailto:hello@oscarmedina.me?subject=Let's get in touch!">hello@oscarmedina.me</a>
+- **Website:** <a href="https://www.oscarmedina.me/">https://www.oscarmedina.me</a>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
