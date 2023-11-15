@@ -10,8 +10,8 @@
 
 <h2>📨 How to reach me</h2>
 <ul>
-<li>**Email:** <a href="mailto:hello@oscarmedina.me?subject=Let's get in touch!">hello@oscarmedina.me</a></li>
-<li>**Website:** <a href="https://www.oscarmedina.me/">https://www.oscarmedina.me</a></li>
+<li><b>Email:</b> <a href="mailto:hello@oscarmedina.me?subject=Let's get in touch!">hello@oscarmedina.me</a></li>
+<li><b>Website:</b> <a href="https://www.oscarmedina.me/">https://www.oscarmedina.me</a></li>
 </ul>
 
 <h3 align="left">Languages and Tools:</h3>
