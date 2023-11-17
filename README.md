@@ -5,7 +5,6 @@
 <ul>
 <li><a href="https://www.shipleap.com">ShipLeap</a> - A complete, easy-to-use shipping solution that you and your customers will love.</li>
 <li><a href="https://www.paragonw2p.com">ParagonW2P</a> - Your easy-to-use, dependable web-to-print solution.</li>
-<li><a href="https://www.evocart.co">EvoCart</a> - *SOON* Paragon's W2P evolution!</li>
 </ul>
 
 
