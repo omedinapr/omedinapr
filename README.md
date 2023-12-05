@@ -14,4 +14,4 @@
 <li><b>Website:</b> <a href="https://www.oscarmedina.me/">https://www.oscarmedina.me</a></li>
 </ul>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
+![Oscar Medina GitHub stats](https://github-readme-stats.vercel.app/api?username=omedinapr&show_icons=true)
