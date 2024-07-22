@@ -19,4 +19,3 @@
 
 
 ![](https://komarev.com/ghpvc/?username=omedinapr)
-<p style="font-size:0.8em; color:#3c3c3c;">**Since:** 07-21-2024</p>
