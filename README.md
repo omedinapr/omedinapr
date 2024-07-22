@@ -1,3 +1,4 @@
+![](https://komarev.com/ghpvc/?username=omedinapr) 07-21-2024
 <h1 align="left">Hi 👋, I'm Oscar Medina</h1>
 <p align="left">Developer by 🌞 and developer by🌙, based out of New Jersey. In addition to creating automated solutions through code, I also enjoy live streaming and going out to restaurants.</p>
 
