@@ -14,5 +14,9 @@
 <li><b>Website:</b> <a href="https://www.oscarmedina.me/">https://www.oscarmedina.me</a></li>
 </ul>
 
+
+------------
+
+
 ![](https://komarev.com/ghpvc/?username=omedinapr)
-<p>07-21-2024</p>
+<p style="font-size:0.8em; color:#3c3c3c;">**Since:** 07-21-2024</p>
