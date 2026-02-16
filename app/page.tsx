@@ -17,7 +17,6 @@ import SocialTwitter from "@/assets/images/socials/twitter.svg";
 
 import { AnimationControls, motion, TargetAndTransition, Transition, useInView, useScroll, VariantLabels } from "framer-motion";
 import { useState } from "react";
-import Head from "next/head";
 import MyInfo from "@/components/MyInfo";
 import Link from "next/link";
 
@@ -26,11 +25,7 @@ const Home: NextPage = () => {
     const targetElement = document.getElementById(target);
     if (!targetElement) return;
 
-    console.log("Target Element: ", targetElement.getBoundingClientRect().top);
-    console.log("Offset: ", offset);
-    console.log("Window ScrollY: ", window.scrollY);
-    const targetPosition = targetElement.getBoundingClientRect().top - offset;
-    console.log(targetPosition);
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({
       top: targetPosition,
       behavior: "smooth",
@@ -68,25 +63,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>OMedina - Full Stack Developer</title>
-        <meta
-          name="description"
-          content="Oscar Medina developer by day and developer by night, based out of New Jersey."
-        />
-        <meta
-          httpEquiv="content-language"
-          content="en-us"
-        ></meta>
-        <meta
-          name="theme-color"
-          content="#EF4553"
-        ></meta>
-        <link
-          rel="canonical"
-          href="/"
-        />
-      </Head>
       <motion.div
         style={{
           position: "fixed",
@@ -301,6 +277,7 @@ const Home: NextPage = () => {
               <Link
                 href="https://www.github.com/omedinapr"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:-translate-y-2 transition"
               >
                 <Image
@@ -313,6 +290,7 @@ const Home: NextPage = () => {
               <Link
                 href="https://www.linkedin.com/in/omedinapr/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:-translate-y-2 transition"
               >
                 <Image
@@ -323,8 +301,9 @@ const Home: NextPage = () => {
                 />
               </Link>
               <Link
-                href="https://www.twitter.com/omedinapr"
+                href="https://x.com/omedinapr"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:-translate-y-2 transition"
               >
                 <Image
