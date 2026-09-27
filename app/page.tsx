@@ -314,11 +314,6 @@ const Home: NextPage = () => {
                 />
               </Link>
             </div>
-            <Link href="mailto:hello@oscarmedina.me?subject=Hey buddy!">
-              <p className="text-[8vw] sm:text-[5vw] md:text-[4vw] lg:text-[2.5vw] font-bold text-medina-red text-center hover:translate-y-4 transition duration-1000">
-                hello@oscarmedina.me
-              </p>
-            </Link>
           </div>
         </div>
       </section>
