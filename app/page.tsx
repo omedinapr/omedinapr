@@ -118,18 +118,17 @@ const Home: NextPage = () => {
             <div className="flex items-center justify-around w-full">
               <motion.img
                 initial={{
-                  x: 300,
+                  x: "44vw",
                   rotate: 360,
                 }}
                 animate={{
-                  x: "0%",
+                  x: "0vw",
                   rotate: 0,
                 }}
                 transition={{
-                  duration: 2,
-                  bounce: 1,
+                  duration: 1.3,
+                  ease: [0.33, 1, 0.68, 1],
                 }}
-                onAnimationComplete={() => {}}
                 src="/logo/O.svg"
                 className="h-[50px] mr-2"
                 alt="O Logo"
@@ -144,9 +143,9 @@ const Home: NextPage = () => {
                   scale: 1,
                 }}
                 transition={{
-                  duration: 1,
-                  bounce: 1,
-                  delay: 2,
+                  duration: 0.5,
+                  delay: 1.15,
+                  ease: "easeOut",
                 }}
                 src="/logo/Medina.svg"
                 className="h-[50px]"
@@ -162,7 +161,8 @@ const Home: NextPage = () => {
                 opacity: 1,
               }}
               transition={{
-                delay: 3,
+                delay: 1.6,
+                duration: 0.5,
               }}
               className="flex flex-col items-center justify-around"
             >
@@ -189,8 +189,9 @@ const Home: NextPage = () => {
               scale: 1,
             }}
             transition={{
-              delay: 3,
-              duration: 2,
+              delay: 1.75,
+              duration: 0.7,
+              ease: "easeOut",
             }}
             className="absolute bottom-10 sm:right-10 right-0 px-8 sm:pl-8 sm:pr-0 w-[100%] sm:w-[90%] lg:pl-0 lg:w-[75%] xl:w-[50%] 2xl:w-[40%]"
           >
