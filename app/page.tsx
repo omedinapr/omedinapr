@@ -15,8 +15,8 @@ import SocialGithub from "@/assets/images/socials/github.svg";
 import SocialLinkedIn from "@/assets/images/socials/linkedin.svg";
 import SocialTwitter from "@/assets/images/socials/twitter.svg";
 
-import { AnimationControls, motion, TargetAndTransition, Transition, useInView, useScroll, VariantLabels } from "framer-motion";
-import { useState } from "react";
+import { motion, useScroll } from "framer-motion";
+import { useState, type ComponentProps } from "react";
 import MyInfo from "@/components/MyInfo";
 import Link from "next/link";
 
@@ -36,13 +36,13 @@ const Home: NextPage = () => {
 
   const [bigOAnimation, setBigOAnimation] = useState({
     opacity: 0.5,
-  } as boolean | VariantLabels | AnimationControls | TargetAndTransition | undefined);
+  } as ComponentProps<typeof motion.div>["animate"]);
   const [bigOTransition, setBigOTransition] = useState({
     delay: 3,
     repeat: 1,
     ease: "easeInOut",
     duration: 4,
-  } as Transition | undefined);
+  } as ComponentProps<typeof motion.div>["transition"]);
 
   const projects: IProjectProps[] = [
     {
@@ -314,11 +314,6 @@ const Home: NextPage = () => {
                 />
               </Link>
             </div>
-            <Link href="mailto:hello@oscarmedina.me?subject=Hey buddy!">
-              <p className="text-[8vw] sm:text-[5vw] md:text-[4vw] lg:text-[2.5vw] font-bold text-medina-red text-center hover:translate-y-4 transition duration-1000">
-                hello@oscarmedina.me
-              </p>
-            </Link>
           </div>
         </div>
       </section>
