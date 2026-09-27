@@ -9,13 +9,13 @@ import Title from "@/components/Title";
 import Project, { IProjectProps } from "@/components/Project";
 
 import Project_ShipLeap from "@/assets/images/projects/ShipLeap.png";
-import Project_ParagonW2P from "@/assets/images/projects/ParagonW2P.png";
+import Project_ParagonMIS from "@/assets/images/projects/ParagonMIS.png";
 
 import SocialGithub from "@/assets/images/socials/github.svg";
 import SocialLinkedIn from "@/assets/images/socials/linkedin.svg";
 import SocialTwitter from "@/assets/images/socials/twitter.svg";
 
-import { motion, useScroll } from "framer-motion";
+import { motion, useReducedMotion, useScroll } from "framer-motion";
 import { useState, type ComponentProps } from "react";
 import MyInfo from "@/components/MyInfo";
 import Link from "next/link";
@@ -33,6 +33,7 @@ const Home: NextPage = () => {
   };
 
   const { scrollYProgress } = useScroll();
+  const shouldReduceMotion = useReducedMotion();
 
   const [bigOAnimation, setBigOAnimation] = useState({
     opacity: 0.5,
@@ -53,11 +54,11 @@ const Home: NextPage = () => {
       image: Project_ShipLeap,
     },
     {
-      title: "Paragon W2P",
-      frontend: ["Vue", "PHP", "Tailwind CSS"],
-      backend: ["AWS EC2", "PHP"],
-      description: "Your easy-to-use, dependable web-to-print solution",
-      image: Project_ParagonW2P,
+      title: "Paragon MIS",
+      frontend: ["Next.js", "React", "Tailwind CSS", "Radix UI"],
+      backend: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "AWS"],
+      description: "A multi-tenant management system for the print industry",
+      image: Project_ParagonMIS,
     },
   ];
 
@@ -77,12 +78,13 @@ const Home: NextPage = () => {
         }}
       />
       <section className="w-full h-full text-medina-black">
-        <h1 className="hidden">OMedina - Full Stack Developer</h1>
+        <h1 className="sr-only">Oscar Medina — Full Stack Developer</h1>
         {/* Big O */}
         <motion.div
           animate={bigOAnimation}
           transition={bigOTransition}
           onAnimationComplete={() => {
+            if (shouldReduceMotion) return;
             setBigOAnimation({
               rotate: [0, 2, 0],
             });
@@ -99,12 +101,13 @@ const Home: NextPage = () => {
           className="absolute w-[180%] top-[40%] -left-[110%] md:w-3/4 md:top-[30%] md:-left-[30%] -z-10"
         >
           <Image
-            priority={false}
+            priority
             src={BigO}
             placeholder={"blur"}
             width={1410.63}
             height={1410.63}
-            alt="Big O background"
+            alt=""
+            aria-hidden="true"
           />
         </motion.div>
 
@@ -163,14 +166,16 @@ const Home: NextPage = () => {
               }}
               className="flex flex-col items-center justify-around"
             >
-              <ul className="py-6">
-                <li className="inline px-3 text-gray-500 hover:text-medina-red hover:font-semibold">
-                  <button onClick={() => scrollToTarget("work", -200)}>WORK</button>
-                </li>
-                <li className="inline px-3 text-gray-500 hover:text-medina-red hover:font-semibold">
-                  <button onClick={() => scrollToTarget("contact")}>CONTACT</button>
-                </li>
-              </ul>
+              <nav aria-label="Main">
+                <ul className="py-6">
+                  <li className="inline px-3 text-gray-500 hover:text-medina-red hover:font-semibold">
+                    <button onClick={() => scrollToTarget("work", -200)}>WORK</button>
+                  </li>
+                  <li className="inline px-3 text-gray-500 hover:text-medina-red hover:font-semibold">
+                    <button onClick={() => scrollToTarget("contact")}>CONTACT</button>
+                  </li>
+                </ul>
+              </nav>
               <RedLine />
             </motion.div>
           </div>
@@ -208,7 +213,8 @@ const Home: NextPage = () => {
               src={OPattern}
               width={3840}
               height={936}
-              alt="Big Os pattern"
+              alt=""
+              aria-hidden="true"
             />
           </div>
         </div>
@@ -252,7 +258,8 @@ const Home: NextPage = () => {
             placeholder={"blur"}
             width={1410.63}
             height={1410.63}
-            alt="Big O backgroun"
+            alt=""
+            aria-hidden="true"
           />
         </div>
 
@@ -264,7 +271,8 @@ const Home: NextPage = () => {
               src={OPattern}
               width={3840}
               height={936}
-              alt="Big Os pattern"
+              alt=""
+              aria-hidden="true"
             />
           </div>
         </div>
@@ -278,39 +286,45 @@ const Home: NextPage = () => {
                 href="https://www.github.com/omedinapr"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub profile"
                 className="hover:-translate-y-2 transition"
               >
                 <Image
                   src={SocialGithub}
                   width={43.65}
                   height={43}
-                  alt="Github"
+                  alt=""
+                  aria-hidden="true"
                 />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/omedinapr/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
                 className="hover:-translate-y-2 transition"
               >
                 <Image
                   src={SocialLinkedIn}
                   width={43.22}
                   height={43.22}
-                  alt="LinkedIn"
+                  alt=""
+                  aria-hidden="true"
                 />
               </Link>
               <Link
                 href="https://x.com/omedinapr"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="X profile"
                 className="hover:-translate-y-2 transition"
               >
                 <Image
                   src={SocialTwitter}
                   width={52.82}
                   height={42.91}
-                  alt="Twitter"
+                  alt=""
+                  aria-hidden="true"
                 />
               </Link>
             </div>

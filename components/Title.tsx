@@ -27,7 +27,12 @@ const Title = ({ title }: IProps) => {
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }} className='flex flex-col items-center justify-around'>
-            <h3 className="py-8 text-3xl font-bold uppercase">{spacedTitle(title)}</h3>
+            <h3
+                className="py-8 text-3xl font-bold uppercase"
+                aria-label={title}
+            >
+                <span aria-hidden="true">{spacedTitle(title)}</span>
+            </h3>
             <RedLine />
         </div>
     );

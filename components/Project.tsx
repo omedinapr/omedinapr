@@ -51,7 +51,7 @@ const Project = (props: IProjectProps) => {
             </div>
             <div className='z-10 w-full lg:w-2/3 lg:ml-8 pt-4 lg:pt-0'>
                 {/* Project Image */}
-                <Image src={props.image} width={1420} height={458} alt={`Project ${props.title}`} className='group-hover:translate-x-10 transition duration-1000 group-hover:scale-105' />
+                <Image src={props.image} width={1420} height={458} alt={`${props.title} project screenshot`} sizes="(max-width: 1024px) 100vw, 66vw" loading="lazy" className='group-hover:translate-x-10 transition duration-1000 group-hover:scale-105' />
             </div>
         </div>
     );
